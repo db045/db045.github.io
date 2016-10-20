@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://db.iserveu.info/2016/10/20/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</loc>
+    <loc>http://db.iserveu.info/2016/10/20/hello-world/</loc>
     
-    <lastmod>2016-10-20T00:27:00.000Z</lastmod>
+    <lastmod>2016-10-20T01:33:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://db.iserveu.info/2016/10/20/hello-world/</loc>
+    <loc>http://db.iserveu.info/2016/10/20/how-to-install/</loc>
     
-    <lastmod>2016-10-19T22:43:08.000Z</lastmod>
+    <lastmod>2016-10-20T01:33:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://db.iserveu.info/2016/10/20/how-to-install-hexo/</loc>
+    
+    <lastmod>2016-10-20T01:25:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://db.iserveu.info/2016/10/20/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</loc>
+    
+    <lastmod>2016-10-20T00:27:00.000Z</lastmod>
     
   </url>
   
