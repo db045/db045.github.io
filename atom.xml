@@ -1,111 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>台灣大寶</title>
-  <subtitle>童養媳生活手札</subtitle>
+  <title>大寶的私藏庫房</title>
+  <subtitle>學習利用數位，期能勞逸合一，追求享受人生。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://db.iserveu.info/"/>
-  <updated>2016-10-20T01:33:48.000Z</updated>
+  <updated>2016-10-25T21:13:36.000Z</updated>
   <id>http://db.iserveu.info/</id>
   
   <author>
-    <name>DB LSW</name>
+    <name>大寶</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>文章標題</title>
-    <link href="http://db.iserveu.info/2016/10/20/how-to-install/"/>
-    <id>http://db.iserveu.info/2016/10/20/how-to-install/</id>
-    <published>2016-10-20T04:23:43.000Z</published>
-    <updated>2016-10-20T01:33:48.000Z</updated>
+    <title>如何在FreeBSD 10.3 上安裝hexo並佈署至gitbub成靜態網頁</title>
+    <link href="http://db.iserveu.info/2016/10/26/how-to-install-hexo-to-github/"/>
+    <id>http://db.iserveu.info/2016/10/26/how-to-install-hexo-to-github/</id>
+    <published>2016-10-25T20:11:23.000Z</published>
+    <updated>2016-10-25T21:13:36.000Z</updated>
     
-    <content type="html"><![CDATA[<p>&#x5F15;&#x8A00;<br><a id="more"></a></p>
-<h2 id="version"><a href="#Version" class="headerlink" title="Version"></a>Version <a href="#version" class="header-anchor">#</a></h2><hr>
-<p>Laravel 5.1.22</p>
-<h2 id="conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion <a href="#conclusion" class="header-anchor">#</a></h2><hr>
-<h2 id="sample-code"><a href="#Sample-Code" class="headerlink" title="Sample Code"></a>Sample Code <a href="#sample-code" class="header-anchor">#</a></h2><hr>
+    <content type="html"><![CDATA[<h2 id="qian-yan-yu-jie-shao"><a href="#&#x524D;&#x8A00;&#x8207;&#x4ECB;&#x7D39;" class="headerlink" title="&#x524D;&#x8A00;&#x8207;&#x4ECB;&#x7D39;"></a>&#x524D;&#x8A00;&#x8207;&#x4ECB;&#x7D39;</h2><p>&#x5F9E; Wordpress &#x5230; Google Blogger&#xFF0C;&#x518D;&#x73A9;&#x4E86;&#x5E7E;&#x5957;CMS(<a href="https://bolt.cm/" target="_blank" rel="external">Bolt CMS</a>&#x3001;<a href="https://www.bigtreecms.org/" target="_blank" rel="external">bigtreecms</a>&#x3001;<a href="http://www.razorcms.co.uk/" target="_blank" rel="external">razorCMS</a>&#x3001;<a href="https://www.wolfcms.org/" target="_blank" rel="external">Wolf CMS</a>&#xFF09;&#xFF0C;&#x96D6;&#x7136;&#x81EA;&#x5DF1;&#x6C92;&#x6709;&#x7DE8;&#x78BC;&#x7684;&#x5927;&#x91CF;&#x9700;&#x6C42;&#xFF0C;&#x4F46;&#x9084;&#x662F;&#x5F97;&#x5B78;&#x7FD2;&#x5982;&#x4F55;&#x548C; github &#x63A5;&#xFF0C;&#x7562;&#x7ADF;&#x9019;&#x662F;&#x500B;&#x8DA8;&#x52E2;&#x3002;<br>&#x4EE5;&#x5F80;&#x7684;CMS&#x7CFB;&#x7D71;&#x53EF;&#x7528;&#x4F86;&#x5BEB;&#x6587;&#x7AE0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x61C9;&#x7528;&#x5728;&#x5546;&#x696D;&#x7684;&#x7DB2;&#x7AD9;&#x88FD;&#x4F5C;&#xFF0C;&#x4F46;&#x90FD;&#x662F;&#x52D5;&#x614B;&#x5C55;&#x793A;&#xFF0C;&#x7576;&#x7136;&#x6709;&#x597D;&#x6709;&#x58DE;&#xFF0C;&#x4E0D;&#x904E;&#x975C;&#x614B;&#x7684;HTML&#x4ECD;&#x662F;&#x6700;&#x4F73;&#x7684;&#x5C55;&#x73FE;&#x7DB2;&#x7AD9;&#x65B9;&#x5F0F;&#x4E4B;&#x4E00;&#xFF0C;&#x65B0;&#x8208;&#x7684;&#x7CFB;&#x7D71; hexo &#x4E5F;&#x5C31;&#x662F;&#x5F37;&#x8ABF;&#x9019;&#x9EDE;&#xFF0C;&#x6211;&#x628A;&#x5B78;&#x7FD2;&#x904E;&#x7A0B;&#x8A18;&#x4E0B;&#x4F86;&#x3002;<br><a id="more"></a></p>
+<h2 id="xi-tong-huan-jing"><a href="#&#x7CFB;&#x7D71;&#x74B0;&#x5883;" class="headerlink" title="&#x7CFB;&#x7D71;&#x74B0;&#x5883;"></a>&#x7CFB;&#x7D71;&#x74B0;&#x5883;</h2><blockquote>
+<ul>
+<li>FreeBSD 10.2-RELEASE-p10</li>
+<li>NGINX version: nginx/1.8.1</li>
+<li>php56-5.6.18</li>
+<li><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
+<li><a href="https://git-scm.com/" target="_blank" rel="external">Git</a></li>
+</ul>
+<h2 id="an-zhuang-guo-cheng"><a href="#&#x5B89;&#x88DD;&#x904E;&#x7A0B;" class="headerlink" title="&#x5B89;&#x88DD;&#x904E;&#x7A0B;"></a>&#x5B89;&#x88DD;&#x904E;&#x7A0B;</h2></blockquote>
+<h3 id="an-zhuang-node-js"><a href="#&#x5B89;&#x88DD;-Node-js" class="headerlink" title="&#x5B89;&#x88DD; Node.js"></a>&#x5B89;&#x88DD; Node.js</h3><p>&#x900F;&#x904E;nvm&#x5B89;&#x88DD; Node.js<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</div><div class="line">nvm install stable</div></pre></td></tr></table></figure></p>
+<h3 id="an-zhuang-hexo"><a href="#&#x5B89;&#x88DD;hexo" class="headerlink" title="&#x5B89;&#x88DD;hexo"></a>&#x5B89;&#x88DD;hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<h3 id="an-zhuang-hexo-cha-jian"><a href="#&#x5B89;&#x88DD;hexo&#x63D2;&#x4EF6;" class="headerlink" title="&#x5B89;&#x88DD;hexo&#x63D2;&#x4EF6;"></a>&#x5B89;&#x88DD;hexo&#x63D2;&#x4EF6;</h3><p>&#x9019;&#x4E9B;&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x4E0D;&#x88DD;&#xFF0C;&#x4E0D;&#x6703;&#x5F71;&#x56AE;&#x4E3B;&#x529F;&#x80FD;&#x3002;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-generator-index --save</div><div class="line">$ npm install hexo-generator-archive --save  </div><div class="line">$ npm install hexo-generator-category --save  </div><div class="line">$ npm install hexo-generator-tag --save  </div><div class="line">$ npm install hexo-server --save  </div><div class="line">$ npm install hexo-deployer-git --save  </div><div class="line">$ npm install hexo-deployer-heroku --save  </div><div class="line">$ npm install hexo-deployer-rsync --save  </div><div class="line">$ npm install hexo-deployer-openshift --save  </div><div class="line">$ npm install hexo-renderer-marked@0.2 --save  </div><div class="line">$ npm install hexo-renderer-stylus@0.2 --save  </div><div class="line">$ npm install hexo-generator-feed@1 --save  </div><div class="line">$ npm install hexo-generator-sitemap@1 --save</div><div class="line">$ npm install hexo-renderer-ejs --save </div><div class="line">$ npm install hexo-renderer-marked --save </div><div class="line">$ npm install hexo-renderer-stylus --save</div></pre></td></tr></table></figure></p>
+<h3 id="ce-shi-hexo"><a href="#&#x6E2C;&#x8A66;-hexo" class="headerlink" title="&#x6E2C;&#x8A66; hexo"></a>&#x6E2C;&#x8A66; hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo</div></pre></td></tr></table></figure>
+<h3 id="jian-zhi-zi-ji-de-blog"><a href="#&#x5EFA;&#x7F6E;&#x81EA;&#x5DF1;&#x7684;-blog" class="headerlink" title="&#x5EFA;&#x7F6E;&#x81EA;&#x5DF1;&#x7684; blog"></a>&#x5EFA;&#x7F6E;&#x81EA;&#x5DF1;&#x7684; blog</h3><p>&#x5C07;&#x90E8;&#x843D;&#x683C;&#x5EFA;&#x7F6E;&#x5728; /home/db/myblog&#x4E4B;&#x4E0B;&#x7684;&#x6307;&#x4EE4;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cd /home/db</div><div class="line">$ hexo init myblog</div><div class="line">$ npm install</div></pre></td></tr></table></figure></p>
+<h3 id="jian-li-xin-wen-zhang"><a href="#&#x5EFA;&#x7ACB;&#x65B0;&#x6587;&#x7AE0;" class="headerlink" title="&#x5EFA;&#x7ACB;&#x65B0;&#x6587;&#x7AE0;"></a>&#x5EFA;&#x7ACB;&#x65B0;&#x6587;&#x7AE0;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new &quot;postName&quot;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>post.content: &#x6587;&#x7AE0;&#x5167;&#x5BB9;<br>post.title: &#x6587;&#x7AE0;&#x6A19;&#x984C;<br>title: &#x6587;&#x7AE0;&#x6A19;&#x984C;<br>date: &#x767C;&#x6587;&#x65E5;&#x671F;<br>categories: &#x6587;&#x7AE0;&#x6240;&#x5C6C;&#x76EE;&#x9304;<br>tags:</p>
+<ul>
+<li>&#x6A19;&#x7C64;1</li>
+<li>&#x6A19;&#x7C64;2<br>feature:&#x6587;&#x7AE0;&#x5716;&#x7247;<br>toc: true #&#x5167;&#x5BB9;&#x5927;&#x7DB2;</li>
+</ul>
+</blockquote>
+<h3 id="zhi-xing-hexo-server"><a href="#&#x57F7;&#x884C;-hexo-server" class="headerlink" title="&#x57F7;&#x884C; hexo server"></a>&#x57F7;&#x884C; hexo server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>&#x6253;&#x958B;&#x700F;&#x89BD;&#x5668;&#xFF0C;&#x8A2A;&#x554F; <a href="http://127.0.0.1:4000" target="_blank" rel="external">http://127.0.0.1:4000</a> &#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x81EA;&#x5DF1;&#x7684;blog&#x4E86;&#x3002;</p>
+<h2 id="hexo-she-ding"><a href="#hexo&#x8A2D;&#x5B9A;" class="headerlink" title="hexo&#x8A2D;&#x5B9A;"></a>hexo&#x8A2D;&#x5B9A;</h2><p>&#x7DE8;&#x8F2F;_config.yml</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi /home/db/myblog/_config.yml</div></pre></td></tr></table></figure>
+<blockquote>
+<p># Site<br>title: &#x8F38;&#x60A8;&#x81EA;&#x5DF1;&#x7684;&#x7DB2;&#x7AD9;&#x540D;&#x7A31;<br>subtitle: &#x7DB2;&#x7AD9;&#x7684;&#x526F;&#x6A19;&#x984C;<br>description: &#x7DB2;&#x7AD9;&#x7684;&#x8AAA;&#x660E;<br>author: &#x4F5C;&#x8005;&#x540D;&#x7A31;<br>language: <code>zh-TW</code><br>timezone: <code>Asia/Taipei</code></p>
+<p># URL<br>url: <a href="http://&#x81EA;&#x8A02;&#x7DB2;&#x5740;.url/" target="_blank" rel="external">http://&#x81EA;&#x8A02;&#x7DB2;&#x5740;.url/</a></p>
+<p># Extensions<br>## Plugins: <a href="https://hexo.io/plugins/" target="_blank" rel="external">https://hexo.io/plugins/</a><br>## Themes: <a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a><br>theme: <code>landscape</code><br>stylus:<br> compress: <code>true</code>  </p>
+<p># Deployment<br>## Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a><br>deploy:<br>  type: <code>git</code><br>  repo: git@github.com:<code>gitusername</code>/<code>gitusername</code>.github.io.git<br>  branch: <code>master</code>  </p>
+</blockquote>
+<h3 id="jia-ru-disqus-liu-yan-gong-neng"><a href="#&#x52A0;&#x5165;disqus&#x7559;&#x8A00;&#x529F;&#x80FD;" class="headerlink" title="&#x52A0;&#x5165;disqus&#x7559;&#x8A00;&#x529F;&#x80FD;"></a>&#x52A0;&#x5165;disqus&#x7559;&#x8A00;&#x529F;&#x80FD;</h3><blockquote>
+<p># Disqus<br>disqus_shortname: PAGE_IDENTIFIER</p>
+</blockquote>
+<h3 id="chuang-jian-about-ye-mian"><a href="#&#x5275;&#x5EFA;-about-&#x9801;&#x9762;" class="headerlink" title="&#x5275;&#x5EFA; about &#x9801;&#x9762;"></a>&#x5275;&#x5EFA; about &#x9801;&#x9762;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page &quot;about&quot;</div></pre></td></tr></table></figure>
+<p>&#x518D;&#x7DE8;&#x8F2F; source/about/index.md &#x6A94;&#x6848;&#x5167;&#x5BB9;&#x3002;</p>
+<h3 id="geng-huan-bu-jing-zhu-ti"><a href="#&#x66F4;&#x63DB;&#x4F48;&#x666F;&#x4E3B;&#x984C;" class="headerlink" title="&#x66F4;&#x63DB;&#x4F48;&#x666F;&#x4E3B;&#x984C;"></a>&#x66F4;&#x63DB;&#x4F48;&#x666F;&#x4E3B;&#x984C;</h3><p>&#x5230;<a href="https://hexo.io/themes/" target="_blank" rel="external">&#x4F48;&#x666F;&#x4E3B;&#x984C;&#x4E0B;&#x6234;&#x9801;</a>&#x9078;&#x4E00;&#x500B;&#x81EA;&#x5DF1;&#x559C;&#x6B61;&#x7684;&#xFF0C;&#x4EE5;<code>git clone</code>&#x4E0B;&#x6234;&#x81F3; theme &#x7684;&#x76EE;&#x9304;&#x4E2D;&#xFF0C;&#x5148;&#x9078;&#x64C7; hexo-theme-again &#x9019;&#x500B;&#x4E3B;&#x984C;&#x4F86;&#x6E2C;&#x8A66;&#x3002;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd /home/db/myblog/theme</div><div class="line">$ git clone https://github.com/DrakeLeung/hexo-theme-again.git</div></pre></td></tr></table></figure></p>
+<p>&#x8A18;&#x5F97;&#x628A;&#x66F4;&#x6539;&#x4E3B;&#x984C;&#x540D;&#x7A31;&#xFF0C;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi /home/db/myblog/_config.yml</div></pre></td></tr></table></figure></p>
+<p>_config.yml&#x5171;&#x6709;2&#x500B;&#xFF0C;&#x4E00;&#x500B;&#x5728;&#x7DB2;&#x7AD9;&#x76EE;&#x9304;&#x4E0B;(/home/db/myblog/_config.yml)&#xFF0C;&#x53E6;&#x4E00;&#x500B;&#x662F;&#x5728;&#x4F48;&#x666F;&#x4E3B;&#x984C;&#x76EE;&#x9304;&#x4E0B;&#x3002;<br>&#x6574;&#x500B;&#x7DB2;&#x7AD9;&#x7684;&#x8A2D;&#x5B9A;&#x5C31;&#x66F4;&#x6539;&#x7B2C;1&#x500B;&#xFF0C;&#x4F48;&#x666F;&#x7684;&#x8A2D;&#x5B9A;&#x56E0;&#x70BA;&#x6BCF;&#x5957;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x898F;&#x5247;&#xFF0C;&#x5728;&#x8A73;&#x95B1;readme.md&#x5F8C;&#xFF0C;&#x518D;&#x4F9D;&#x8AAA;&#x660E;&#x53BB;&#x66F4;&#x6539;&#x3002;</p>
+<blockquote>
+<p>theme: <code>hexo-theme-again</code></p>
+</blockquote>
+<h2 id="bu-shu-zi-ji-de-jing-tai-blog-zhi-github"><a href="#&#x4F48;&#x7F72;&#x81EA;&#x5DF1;&#x7684;&#x975C;&#x614B;-blog-&#x81F3;-GitHub" class="headerlink" title="&#x4F48;&#x7F72;&#x81EA;&#x5DF1;&#x7684;&#x975C;&#x614B; blog &#x81F3; GitHub"></a>&#x4F48;&#x7F72;&#x81EA;&#x5DF1;&#x7684;&#x975C;&#x614B; blog &#x81F3; GitHub</h2><p>&#x5728;_config.yml&#x4E2D;&#x8981;&#x8A2D;&#x5B9A;&#x597D; #Deployment &#x9019;&#x500B;&#x5340;&#x584A;&#x7684;&#x5167;&#x5BB9;&#x3002;</p>
+<ol>
+<li>&#x5982;&#x679C;&#x9084;&#x6C92;&#x6709;&#x8A3B;&#x518A; <a href="https://github.com/" target="_blank" rel="external">GitHub</a>&#x5C31;&#x8A3B;&#x518A;&#x4E00;&#x500B;&#xFF0C;&#x7136;&#x5F8C;&#x767B;&#x5165;&#x4F7F;&#x7528;&#x8005;&#x4ECB;&#x9762;&#xFF0C;&#x9019;&#x88E1;&#x4EE5; <code>dbusername</code> &#x70BA;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#x7BC4;&#x4F8B;&#x3002;  </li>
+<li>&#x5728;&#x4E3B;&#x9801;&#x53F3;&#x4E0B;&#x89D2;&#x9EDE;&#x9078; <code>New repository</code>&#xFF0C;<code>Repository name</code> &#x5FC5;&#x987B;&#x548C;&#x7528;&#x6237;&#x540D;&#x4E00;&#x6A23;&#xFF0C;&#x6240;&#x4EE5;&#x8F38;&#x4EBA;&#x7AF9;&#xFF1A;<code>dbusername.github.io</code>  </li>
+<li>&#x9996;&#x6B21;&#x5EFA;&#x7ACB;&#x5F8C;&#x8981;&#x7B49;&#x5F85;&#x4E00;&#x6703;&#x5152;&#x6642;&#x9593;&#xFF0C;&#x6210;&#x529F;&#x5F8C;&#x8A2A;&#x554F; <a href="http://dbusername.github.io" target="_blank" rel="external">http://dbusername.github.io</a> &#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x7DB2;&#x7AD9;&#x5167;&#x5BB9;&#x3002;<h3 id="hexo-chang-yong-zhi-ling"><a href="#hexo-&#x5E38;&#x7528;&#x6307;&#x4EE4;" class="headerlink" title="hexo &#x5E38;&#x7528;&#x6307;&#x4EE4;"></a>hexo &#x5E38;&#x7528;&#x6307;&#x4EE4;</h3></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo n <span class="comment">#&#x751F;&#x6210;&#x6587;&#x7AE0;  </span></div><div class="line">$ hexo s <span class="comment">#&#x8B93; blog &#x53EF;&#x4EE5;&#x5728; local &#x7AEF;&#x6AA2;&#x8996;</span></div><div class="line">$ hexo g <span class="comment">#&#x751F;&#x6210;public&#x9759;&#x614B;&#x6587;&#x4EF6;</span></div></pre></td></tr></table></figure>
+<h2 id="jiang-hexo-jia-she-yu-nginx-shang"><a href="#&#x5C07;-hexo-&#x67B6;&#x8A2D;&#x65BC;-NGINX-&#x4E0A;" class="headerlink" title="&#x5C07; hexo &#x67B6;&#x8A2D;&#x65BC; NGINX &#x4E0A;"></a>&#x5C07; hexo &#x67B6;&#x8A2D;&#x65BC; NGINX &#x4E0A;</h2><p>&#x56E0;&#x70BA; hexo &#x6709;&#x81EA;&#x5DF1;&#x7684; node.js &#xFF0C;&#x9810;&#x8A2D;&#x9023;&#x63A5;&#x57E0;&#x662F;tcp:4000&#xFF0C;&#x9019;&#x6A23;&#x5F88;&#x4E0D;&#x65B9;&#x4FBF;&#xFF0C;&#x8981;&#x8B93;&#x81EA;&#x5DF1;&#x7684;&#x975C;&#x614B;blog&#x80FD;&#x88AB;&#x8A2A;&#x554F;&#xFF0C;&#x9664;&#x4E86;&#x4F48;&#x7F72;&#x5230; github &#x4E4B;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5229;&#x7528; nginx &#x6307;&#x5411;&#x76EE;&#x9304;&#x4F86;&#x9054;&#x6210;&#x3002;<br>&#x672C;&#x4F8B;&#x4E2D;&#x7684; hexo &#x662F;&#x67B6;&#x8A2D;&#x5728;<code>/home/db/myblog</code>&#x9019;&#x500B;&#x76EE;&#x9304;&#xFF0C;&#x5728;&#x57F7;&#x884C;<code>hexo g</code>&#x6307;&#x4EE4;&#x5F8C;&#xFF0C;&#x5373;&#x6703;&#x7522;&#x751F;&#x6587;&#x4EF6;&#x5728;<code>/home/db/myblog/public</code>&#x76EE;&#x9304;&#x4E0B;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8981;&#x5728; NGINX &#x8A2D;&#x5B9A;&#x5373;&#x53EF;&#x3002;</p>
+<blockquote>
+<p>server {<br>  listen 192.168.1.1:80; <code>#&#x4F9D;&#x5BE6;&#x969B;IP&#x9032;&#x884C;&#x8A2D;&#x5B9A;</code><br>  server_name <code>&#x81EA;&#x5DF1;&#x7684;&#x7DB2;&#x5740;</code>;<br>  server_name_in_redirect off;<br>  root /data/htdocs/hexo/public;<br>  access_log   /data/weblogs/db.iserveu.info-access.log;<br>  error_log    /data/weblogs/db.iserveu.info-error.log;<br>    proxy_read_timeout 600;<br>  include conf/common.conf;</p>
+<p>  #include conf/php.conf;<br>  include conf/wpsecure.conf;<br>  include conf/drop.conf;<br>}</p>
+</blockquote>
+<h3 id="can-kao-wen-jian"><a href="#&#x53C3;&#x8003;&#x6587;&#x4EF6;" class="headerlink" title="&#x53C3;&#x8003;&#x6587;&#x4EF6;"></a>&#x53C3;&#x8003;&#x6587;&#x4EF6;</h3><ol>
+<li><a href="https://hexo.io/zh-tw/docs/" target="_blank" rel="external">https://hexo.io/zh-tw/docs/</a></li>
+</ol>
 ]]></content>
     
     <summary type="html">
     
-      標題描述
+      &lt;h2 id=&quot;前言與介紹&quot;&gt;&lt;a href=&quot;#前言與介紹&quot; class=&quot;headerlink&quot; title=&quot;前言與介紹&quot;&gt;&lt;/a&gt;前言與介紹&lt;/h2&gt;&lt;p&gt;從 Wordpress 到 Google Blogger，再玩了幾套CMS(&lt;a href=&quot;https://bolt.cm/&quot;&gt;Bolt CMS&lt;/a&gt;、&lt;a href=&quot;https://www.bigtreecms.org/&quot;&gt;bigtreecms&lt;/a&gt;、&lt;a href=&quot;http://www.razorcms.co.uk/&quot;&gt;razorCMS&lt;/a&gt;、&lt;a href=&quot;https://www.wolfcms.org/&quot;&gt;Wolf CMS&lt;/a&gt;），雖然自己沒有編碼的大量需求，但還是得學習如何和 github 接，畢竟這是個趨勢。&lt;br&gt;以往的CMS系統可用來寫文章，也可以應用在商業的網站製作，但都是動態展示，當然有好有壞，不過靜態的HTML仍是最佳的展現網站方式之一，新興的系統 hexo 也就是強調這點，我把學習過程記下來。&lt;br&gt;
     
     </summary>
     
-    
-      <category term="Laravel" scheme="http://db.iserveu.info/tags/Laravel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://db.iserveu.info/2016/10/20/hello-world/"/>
-    <id>http://db.iserveu.info/2016/10/20/hello-world/</id>
-    <published>2016-10-20T01:33:56.000Z</published>
-    <updated>2016-10-20T01:33:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="quick-start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start <a href="#quick-start" class="header-anchor">#</a></h2><h3 id="create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post <a href="#create-a-new-post" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server <a href="#run-server" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files <a href="#generate-static-files" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites <a href="#deploy-to-remote-sites" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
+      <category term="Server" scheme="http://db.iserveu.info/categories/Server/"/>
     
     
-  </entry>
-  
-  <entry>
-    <title>23如何在FreeBSD 10.2 上安裝 hexo並佈署至  gitbub</title>
-    <link href="http://db.iserveu.info/2016/10/20/how-to-install-hexo/"/>
-    <id>http://db.iserveu.info/2016/10/20/how-to-install-hexo/</id>
-    <published>2016-10-20T01:25:40.000Z</published>
-    <updated>2016-10-20T01:25:40.000Z</updated>
+      <category term="Nginx" scheme="http://db.iserveu.info/tags/Nginx/"/>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="zuo-ye-huan-jing"><a href="#&#x4F5C;&#x696D;&#x74B0;&#x5883;" class="headerlink" title="&#x4F5C;&#x696D;&#x74B0;&#x5883;"></a>&#x4F5C;&#x696D;&#x74B0;&#x5883; <a href="#zuo-ye-huan-jing" class="header-anchor">#</a></h2><hr>
-<h2 id="an-zhuang-guo-cheng"><a href="#&#x5B89;&#x88DD;&#x904E;&#x7A0B;" class="headerlink" title="&#x5B89;&#x88DD;&#x904E;&#x7A0B;"></a>&#x5B89;&#x88DD;&#x904E;&#x7A0B; <a href="#an-zhuang-guo-cheng" class="header-anchor">#</a></h2><h3 id="create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post <a href="#create-a-new-post" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ &#x5B89;&#x88DD;&#x6307;&#x4EE4;</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server <a href="#run-server" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://db.iserveu.info/2016/10/20/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/"/>
-    <id>http://db.iserveu.info/2016/10/20/中文測試/</id>
-    <published>2016-10-20T00:28:25.000Z</published>
-    <updated>2016-10-20T00:27:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>title: hello-world   //&#x5728;&#x6B64;&#x5904;&#x6DFB;&#x52A0;&#x4F60;&#x7684;&#x6807;&#x9898;&#x3002;<br>date: 2014-11-7 08:55:29   //&#x5728;&#x6B64;&#x5904;&#x8F93;&#x5165;&#x4F60;&#x7F16;&#x8F91;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x65F6;&#x95F4;&#x3002;<br>categories: Exercise   //&#x5728;&#x6B64;&#x5904;&#x8F93;&#x5165;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x5206;&#x7C7B;&#x3002;<br>toc: true  //&#x5728;&#x6B64;&#x5904;&#x8BBE;&#x5B9A;&#x662F;&#x5426;&#x5F00;&#x542F;&#x76EE;&#x5F55;&#xFF0C;&#x9700;&#x8981;&#x4E3B;&#x9898;&#x652F;&#x6301;&#x3002;</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;title: hello-world   //&amp;#x5728;&amp;#x6B64;&amp;#x5904;&amp;#x6DFB;&amp;#x52A0;&amp;#x4F60;&amp;#x7684;&amp;#x6807;&amp;#x9898;&amp;#x3002;&lt;br&gt;date: 2014-11-7 08:55:29   //&amp;
-    
-    </summary>
-    
+      <category term="hexo" scheme="http://db.iserveu.info/tags/hexo/"/>
     
   </entry>
   
